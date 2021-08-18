@@ -22,7 +22,12 @@ use App\Http\Controllers\API\ProductController;
 */
 Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [RegisterController::class, 'login']);
+Route::post('logout', [RegisterController::class, 'logout']);
      
 Route::middleware('auth:api')->group( function () {
     Route::resource('products', ProductController::class);
+});
+
+Route::get('/user', function (Request $request) {
+  return auth()->guard('api')->user();
 });
