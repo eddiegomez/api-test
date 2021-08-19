@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\API\TesteController;
+=======
+use App\Http\Controllers\API\TestesController;
+>>>>>>> master
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('test', function() {
     dd (DB::connection()->getPdo());
 });
 
 Route::resource('testes', TesteController::class);
+=======
+Route::resource('testes', TestesController::class);
+>>>>>>> master
