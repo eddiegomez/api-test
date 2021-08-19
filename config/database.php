@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'oracle'),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,6 +34,18 @@ return [
     */
 
     'connections' => [
+
+        'oracle' => [
+            'driver' => 'oracle',
+            'host' => '172.16.28.14',
+            'port' => '1521',
+            'database' => 'sissmoh.sede.inss.gov.mz',
+            'service_name' => 'sissmoh.sede.inss.gov.mz',
+            'username' => 'INAGE',
+            'password' => 'INAGE',
+            'charset' => '',
+            'prefix' => '',
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',

@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\RegisterController;
-use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\TesteController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,7 +25,9 @@ Route::post('login', [RegisterController::class, 'login']);
 Route::post('logout', [RegisterController::class, 'logout']);
      
 Route::middleware('auth:api')->group( function () {
-    Route::resource('products', ProductController::class);
+  Route::resource('products', ProductController::class);
+	Route::resource('testes', TesteController::class);
+  //Route::get('testes', 'app\Http\API\Controllers\TesteController@index');
 });
 
 Route::get('/user', function (Request $request) {
