@@ -57,12 +57,12 @@ return [
 
         'oracle' => [
             'driver' => 'oracle',
-            'host' => '172.16.28.14',
+            'host' => '172.16.25.170',
             'port' => '1521',
             'database' => 'xe',
-            'service_name' => 'sissmoh.sede.inss.gov.mz',
-            'username' => 'INAGE',
-            'password' => 'INAGE',
+            'service_name' => 'dbteste',
+            'username' => 'inage',
+            'password' => 'ina21ge',
             'charset' => 'utf8',
             'prefix' => '',
         ],

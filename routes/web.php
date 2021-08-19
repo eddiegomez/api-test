@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\TestesController;
+use App\Http\Controllers\API\EntidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('testes', TestesController::class);
+Route::resource('entidades', EntidadeController::class);
