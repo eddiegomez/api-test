@@ -43,6 +43,18 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        'oracle' => [
+            'driver' => 'oracle',
+            'host' => '172.16.28.14',
+            'port' => '1521',
+            'database' => 'xe',
+            'service_name' => 'sissmoh.sede.inss.gov.mz',
+            'username' => 'INAGE',
+            'password' => 'INAGE',
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
