@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\TestesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,7 +26,9 @@ Route::post('login', [RegisterController::class, 'login']);
 Route::post('logout', [RegisterController::class, 'logout']);
      
 Route::middleware('auth:api')->group( function () {
+    //usado para testes (conexao via mysql)
     Route::resource('products', ProductController::class);
+    Route::resource('testes', TestesController::class);
 });
 
 Route::get('/user', function (Request $request) {
