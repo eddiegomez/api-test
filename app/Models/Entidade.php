@@ -15,6 +15,15 @@ class Entidade extends Model
      * @var array
      */
     protected $fillable = [
-        'name'
+        'nuit_empresa',
+        'nuit_empregado',
+        'nome_empregado',
+        'num_inss',
+        'prov_unid_prod',
+        'distrito_unidade_prod',
+        'nacionalidade',
+        'sexo',
+        'ramo_actividade',
+        'data_nascimento'
     ];
 }
